@@ -39,7 +39,8 @@ RUN npm install --omit=dev
 # or: RUN yarn install --production --frozen-lockfile
 
 # Expose Next.js port
-EXPOSE 3000
+ENV PORT=80
+EXPOSE 80
 
 # Start Next.js
 CMD ["npm", "run", "start"]
